@@ -1,0 +1,20 @@
+NOTES/PLANS etc.
+
+Plan for the next coding session is as follows:
+    1. Identify structure of the data saved in my files
+    2. Identify relevant information from the given data <- what could actually be useful for further analysis
+    3. Entwicklung des Prozesses zur Trennung relevanter und irrelevanter Daten
+    4. Find reasonable data format to store it to
+    5. Think about how to analyze the data
+
+
+
+3. 
+ - define relevant data right from the beginning (z.B. as dict) -> scan available date for the information that I'm looking for 
+ - e.g. if author in entry: dict['author'] = entry['author']
+
+
+
+ DEFINITIONS:
+
+ entry: element in json-files provided by doaj 
