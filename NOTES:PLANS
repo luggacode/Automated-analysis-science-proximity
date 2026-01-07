@@ -1,5 +1,9 @@
 NOTES/PLANS etc.
 
+PROJECT OBJECTIVE:
+ - calculate proximity between scientists
+ - parameters: shared publications of papers, similarity of paper titles/abstracts, journal, etc? 
+
 Plan for the next coding session is as follows:
     1. Identify structure of the data saved in my files
     2. Identify relevant information from the given data <- what could actually be useful for further analysis
@@ -7,14 +11,82 @@ Plan for the next coding session is as follows:
     4. Find reasonable data format to store it to
     5. Think about how to analyze the data
 
+AUSWERTUNGSIDEEN
+-> Veröffentlichungsfrequenzen in Themengebieten (welches Thema liegt im Trend)
+-> Welche Nation besonders viel in welchem Thema
+-> Welcher Autor weist welche connections zu welchem anderen Autoren auf 
+
+NEW GOAL:
+- Create a world map of scientific institutions
+- Map all the institutions based on the OpenAlex Data Snapshot
+- based on the institutions focus on authors and their publications (see plan)
+
+plan:
+-> find author with at least 10 publications 
+-> find every author this author published with (TOP PRIORITY)
+-> find author keywords
+-> calculate bm-25 from abstracts from main author to abstracts of all the authors who published with main author ()
+-> plot h-index development of author 
+-> rank similarity to other authors by adding up bm-25 scores of every abstract of main author compared to the other author divided by the mean of the two abstract counts
+-> find which author tends to cite which author
 
 
-3. 
- - define relevant data right from the beginning (z.B. as dict) -> scan available date for the information that I'm looking for 
- - e.g. if author in entry: dict['author'] = entry['author']
 
 
 
- DEFINITIONS:
 
+
+
+NOTES:
+
+mini goal 1:
+    - plot only scientists from specific countries based on plotting of related authors achieved beforehand
+    - include up to 5 keywords in information shown when hovering over author
+
+mini goal 2:
+    - plot researchers with similar research topics as main_author
+    - HOW:
+    - Finding a researchers most important topic
+    - Finding top n works related to this topic
+    - extract researchers from these works
+    - plot researchers with corresponding publication title
+
+
+
+
+Open Alex IDs to work with
+    - Dirks: a5063212181
+    - De Pitta: a5077227646
+    - 
+Which Open Alex API prompts are needed:
+
+-> prompt showing scientist with OpenAlex-ID xyz: 
+https://api.openalex.org/authors/FILL-IN-ID
+-> prompt showing scientist with Orcid-ID xyz: 
+https://api.openalex.org/authors/https://orcid.org/FILL-IN-ID
+https://api.openalex.org/authors/orcid:FILL-IN-ID
+From this one can derive the OpenAlex_ID -> which is available for every scientist listet on OpenAlex
+-> prompt showing works published by author with OpenAlex ID xyz
+https://api.openalex.org/works?filter=author.id:A5042522694
+INTERESTING: As it seems, every work has the feature is_in_doaj which could be helpful lateron when trying to introduce keywords etc. 
+-> prompt showing authors 
+
+Which ROR API prompts are needed:
+-> prompt to retrieve information on organization with ROR ID xyz
+https://api.ror.org/v2/organizations/FILL-IN-ROR-ID
+
+
+
+
+
+
+
+
+HISTORY (what has bee achieved):
+- based on openAlex ID of an author 
+- map this author on a world map CHECK
+- find every author the main author published with CHECK
+- do a connections mapping, mapping the connected authors on the world map as well CHECK
+
+DEFINITIONS:
  entry: element in json-files provided by doaj 

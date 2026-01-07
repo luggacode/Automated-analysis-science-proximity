@@ -1,0 +1,541 @@
+{
+  "id": "https://openalex.org/A5063212181",
+  "orcid": "https://orcid.org/0000-0002-2200-2598",
+  "display_name": "Jan‐Henning Dirks",
+  "display_name_alternatives": [
+    "Jan‐Henning Dirks",
+    "Jürgen Dirks",
+    "Jan-Henning Dirks",
+    "J.‐H. Dirks",
+    "J.-H. Dirks",
+    "D. H",
+    "J. H. Dirks",
+    "J-H Dirks",
+    "JH. Dirks",
+    "Dirks J.-H."
+  ],
+  "works_count": 61,
+  "cited_by_count": 1711,
+  "summary_stats": {
+    "2yr_mean_citedness": 1.5625,
+    "h_index": 25,
+    "i10_index": 32
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A5063212181",
+    "orcid": "https://orcid.org/0000-0002-2200-2598"
+  },
+  "affiliations": [
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210135521",
+        "ror": "https://ror.org/04fq9j139",
+        "display_name": "Max Planck Institute for Intelligent Systems",
+        "country_code": "DE",
+        "type": "facility",
+        "lineage": [
+          "https://openalex.org/I149899117",
+          "https://openalex.org/I4210135521"
+        ]
+      },
+      "years": [
+        2020,
+        2019,
+        2018,
+        2016,
+        2015,
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I20121455",
+        "ror": "https://ror.org/02hpadn98",
+        "display_name": "Bielefeld University",
+        "country_code": "DE",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I20121455"
+        ]
+      },
+      "years": [
+        2011
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I223822909",
+        "ror": "https://ror.org/038t36y30",
+        "display_name": "Heidelberg University",
+        "country_code": "DE",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I223822909"
+        ]
+      },
+      "years": [
+        2016
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I204553293",
+        "ror": "https://ror.org/041qf4r12",
+        "display_name": "China University of Petroleum, Beijing",
+        "country_code": "CN",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I204553293"
+        ]
+      },
+      "years": [
+        2018
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210087042",
+        "ror": "https://ror.org/000bxzc63",
+        "display_name": "Max Planck Institute for Medical Research",
+        "country_code": "DE",
+        "type": "facility",
+        "lineage": [
+          "https://openalex.org/I149899117",
+          "https://openalex.org/I4210087042"
+        ]
+      },
+      "years": [
+        2017,
+        2016
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I166433441",
+        "ror": "https://ror.org/04f7jc139",
+        "display_name": "Hochschule Bremen",
+        "country_code": "DE",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I166433441"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022,
+        2021,
+        2020,
+        2019,
+        2018,
+        2017,
+        2016
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210142027",
+        "ror": "https://ror.org/045jad561",
+        "display_name": "GlobalFoundries (Germany)",
+        "country_code": "DE",
+        "type": "company",
+        "lineage": [
+          "https://openalex.org/I35662394",
+          "https://openalex.org/I4210142027"
+        ]
+      },
+      "years": [
+        2017
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I241749",
+        "ror": "https://ror.org/013meh722",
+        "display_name": "University of Cambridge",
+        "country_code": "GB",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I241749"
+        ]
+      },
+      "years": [
+        2012,
+        2011,
+        2009
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I149899117",
+        "ror": "https://ror.org/01hhn8329",
+        "display_name": "Max Planck Society",
+        "country_code": "DE",
+        "type": "nonprofit",
+        "lineage": [
+          "https://openalex.org/I149899117"
+        ]
+      },
+      "years": [
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I205274468",
+        "ror": "https://ror.org/02tyrky19",
+        "display_name": "Trinity College Dublin",
+        "country_code": "IE",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I205274468"
+        ]
+      },
+      "years": [
+        2013,
+        2012,
+        2011
+      ]
+    }
+  ],
+  "last_known_institutions": [
+    {
+      "id": "https://openalex.org/I166433441",
+      "ror": "https://ror.org/04f7jc139",
+      "display_name": "Hochschule Bremen",
+      "country_code": "DE",
+      "type": "education",
+      "lineage": [
+        "https://openalex.org/I166433441"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "https://openalex.org/T10702",
+      "display_name": "Insect and Arachnid Ecology and Behavior",
+      "count": 29,
+      "score": 0.9998000264167786,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1311",
+        "display_name": "Genetics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11799",
+      "display_name": "Adhesion, Friction, and Surface Interactions",
+      "count": 22,
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2211",
+        "display_name": "Mechanics of Materials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11170",
+      "display_name": "Biomimetic flight and propulsion mechanisms",
+      "count": 9,
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2202",
+        "display_name": "Aerospace Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11278",
+      "display_name": "Calcium Carbonate Crystallization and Inhibition",
+      "count": 8,
+      "score": 0.9994000196456909,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2502",
+        "display_name": "Biomaterials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10423",
+      "display_name": "Neurobiology and Insect Physiology Research",
+      "count": 8,
+      "score": 0.9998000264167786,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2804",
+        "display_name": "Cellular and Molecular Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "topic_share": [
+    {
+      "id": "https://openalex.org/T11170",
+      "display_name": "Biomimetic flight and propulsion mechanisms",
+      "value": 0.0002399,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2202",
+        "display_name": "Aerospace Engineering"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11799",
+      "display_name": "Adhesion, Friction, and Surface Interactions",
+      "value": 0.0001426,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2211",
+        "display_name": "Mechanics of Materials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/22",
+        "display_name": "Engineering"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11278",
+      "display_name": "Calcium Carbonate Crystallization and Inhibition",
+      "value": 0.0001133,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2502",
+        "display_name": "Biomaterials"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/25",
+        "display_name": "Materials Science"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/3",
+        "display_name": "Physical Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10702",
+      "display_name": "Insect and Arachnid Ecology and Behavior",
+      "value": 9.37e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1311",
+        "display_name": "Genetics"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12161",
+      "display_name": "Plant Surface Properties and Treatments",
+      "value": 6.79e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1110",
+        "display_name": "Plant Science"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/11",
+        "display_name": "Agricultural and Biological Sciences"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "101468663",
+      "wikidata": "https://www.wikidata.org/wiki/Q1620158",
+      "display_name": "Modular design",
+      "score": 0.5531901717185974
+    },
+    {
+      "id": "104304963",
+      "wikidata": "https://www.wikidata.org/wiki/Q5316114",
+      "display_name": "Durability",
+      "score": 0.48362603783607483
+    },
+    {
+      "id": "104317684",
+      "wikidata": "https://www.wikidata.org/wiki/Q7187",
+      "display_name": "Gene",
+      "score": 0.0
+    },
+    {
+      "id": "104317684",
+      "wikidata": "https://www.wikidata.org/wiki/Q7187",
+      "display_name": "Gene",
+      "score": 0.0
+    }
+  ],
+  "counts_by_year": [
+    {
+      "year": 2006,
+      "works_count": 1,
+      "oa_works_count": 0,
+      "cited_by_count": 1
+    },
+    {
+      "year": 2007,
+      "works_count": 1,
+      "oa_works_count": 0,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2009,
+      "works_count": 3,
+      "oa_works_count": 0,
+      "cited_by_count": 145
+    },
+    {
+      "year": 2011,
+      "works_count": 4,
+      "oa_works_count": 2,
+      "cited_by_count": 292
+    },
+    {
+      "year": 2012,
+      "works_count": 4,
+      "oa_works_count": 3,
+      "cited_by_count": 324
+    },
+    {
+      "year": 2013,
+      "works_count": 1,
+      "oa_works_count": 0,
+      "cited_by_count": 49
+    },
+    {
+      "year": 2014,
+      "works_count": 2,
+      "oa_works_count": 1,
+      "cited_by_count": 124
+    },
+    {
+      "year": 2015,
+      "works_count": 3,
+      "oa_works_count": 0,
+      "cited_by_count": 122
+    },
+    {
+      "year": 2016,
+      "works_count": 6,
+      "oa_works_count": 2,
+      "cited_by_count": 298
+    },
+    {
+      "year": 2017,
+      "works_count": 6,
+      "oa_works_count": 3,
+      "cited_by_count": 92
+    },
+    {
+      "year": 2018,
+      "works_count": 4,
+      "oa_works_count": 2,
+      "cited_by_count": 29
+    },
+    {
+      "year": 2019,
+      "works_count": 3,
+      "oa_works_count": 3,
+      "cited_by_count": 29
+    },
+    {
+      "year": 2020,
+      "works_count": 4,
+      "oa_works_count": 3,
+      "cited_by_count": 116
+    },
+    {
+      "year": 2021,
+      "works_count": 1,
+      "oa_works_count": 1,
+      "cited_by_count": 52
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "oa_works_count": 1,
+      "cited_by_count": 13
+    },
+    {
+      "year": 2023,
+      "works_count": 2,
+      "oa_works_count": 1,
+      "cited_by_count": 8
+    },
+    {
+      "year": 2024,
+      "works_count": 5,
+      "oa_works_count": 5,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2025,
+      "works_count": 9,
+      "oa_works_count": 3,
+      "cited_by_count": 3
+    }
+  ],
+  "longest_name": "Jan‐Henning Dirks",
+  "parsed_longest_name": {
+    "first": "jan‐henning",
+    "middle": "",
+    "last": "dirks",
+    "suffix": "",
+    "nickname": ""
+  },
+  "block_key": "j dirks",
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A5063212181",
+  "updated_date": "2025-12-03T00:04:00.142953",
+  "created_date": "2019-03-22"
+}
