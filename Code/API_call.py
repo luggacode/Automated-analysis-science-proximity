@@ -7,6 +7,7 @@ from bokeh.models import ColumnDataSource, HoverTool
 from pyproj import Proj, transform
 import geopandas as gpd
 from shapely.geometry import Point
+from useful_methods import file_exists
 
 def extract_openalex_id(input_string):
     """
@@ -19,20 +20,6 @@ def extract_openalex_id(input_string):
     openalex_id = last_part.replace(".json", "")
     return openalex_id
 
-def file_exists(folder_path, filename):
-    """
-    Check if a file exists in the given folder.
-
-    Parameters:
-        folder_path (str): Path to the folder
-        filename (str): Name of the file to check
-
-    Returns:
-        bool: True if the file exists, False otherwise
-    """
-    full_path = os.path.join(folder_path, filename)
-    return os.path.isfile(full_path)
-
 def get_content_from_request(url, filename):
     """
     saves data from API request to json-file
@@ -40,15 +27,30 @@ def get_content_from_request(url, filename):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
+        with open(str(filename) + ".json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
     else:
         print("Request failed:", response.status_code)
-    with open(str(filename) + ".json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+
+def get_works_from_request(url, content) ->  dict:
+    """
+    saves data from API request to json-file
+    """
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+        content['results'].extend(data['results'])
+    else:
+        print("Request failed:", response.status_code)
+    
+    return content
+    
 
 def get_institution(file):
     """
     Returns ror-ID of the last known institution of a researcher in his records
     """
+    content = None
     with open(str(file) + ".json", "r", encoding="utf-8") as f:
         data = json.load(f)
         try: 
