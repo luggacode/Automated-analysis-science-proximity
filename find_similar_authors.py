@@ -34,7 +34,6 @@ def get_top_n_papers(topic_list, paper_count):
                         query += 'topics.id:' + str(element) + ','
                 query = query.rstrip(query[-1:]) 
                 query += '&per-page=50'
-                print(query)
                 content = get_works_from_request(query, content)
                 if int(len(content['results'])) > paper_count:
                     less_than_n = False
@@ -162,4 +161,3 @@ inProj = Proj(init='epsg:3857')
 main_author_ID = 'A5077227646'
 
 # generate_similar_authors_map(main_author_ID)
-generate_similar_authors_map(main_author_ID)

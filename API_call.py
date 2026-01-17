@@ -113,11 +113,9 @@ def get_institution_location(author_ID):
     """
     Returns longitude and latitude of an authors institution based on their OpenAlexID
     """
-    print(author_ID)
     institution_ID = get_institution(author_ID)
     if not institution_ID == None:
         institution = get_content_from_request('https://api.ror.org/v2/organizations/' + institution_ID)
-        print(institution)
         lat, lng = get_coordinates(institution)
     else:
         lat = 0
