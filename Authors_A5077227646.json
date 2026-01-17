@@ -1,0 +1,760 @@
+{
+  "id": "https://openalex.org/A5077227646",
+  "orcid": "https://orcid.org/0000-0001-5799-5182",
+  "display_name": "Maurizio De Pittà",
+  "display_name_alternatives": [
+    "Maurizio De Pittà",
+    "Maurizio de Pittà",
+    "de Pittà, Maurizio",
+    "Maurizio De PittÃ ",
+    "M. De Pittà",
+    "De Pittà, Maurizio",
+    "Maurizio De Pitta"
+  ],
+  "works_count": 50,
+  "cited_by_count": 1533,
+  "summary_stats": {
+    "2yr_mean_citedness": 6.428571428571429,
+    "h_index": 18,
+    "i10_index": 24
+  },
+  "ids": {
+    "openalex": "https://openalex.org/A5077227646",
+    "orcid": "https://orcid.org/0000-0001-5799-5182"
+  },
+  "affiliations": [
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210115270",
+        "ror": "https://ror.org/022hg5v70",
+        "display_name": "Chicago Neuropsychology Group",
+        "country_code": "US",
+        "type": "other",
+        "lineage": [
+          "https://openalex.org/I4210115270"
+        ]
+      },
+      "years": [
+        2019
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I100532134",
+        "ror": "https://ror.org/029brtt94",
+        "display_name": "Université Claude Bernard Lyon 1",
+        "country_code": "FR",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I100532134",
+          "https://openalex.org/I203339264"
+        ]
+      },
+      "years": [
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210129159",
+        "ror": "https://ror.org/03p3f6k20",
+        "display_name": "Laboratoire de Microbiologie, Adaptation et Pathogénie",
+        "country_code": "FR",
+        "type": "facility",
+        "lineage": [
+          "https://openalex.org/I100532134",
+          "https://openalex.org/I1294671590",
+          "https://openalex.org/I1294671590",
+          "https://openalex.org/I203339264",
+          "https://openalex.org/I4210096427",
+          "https://openalex.org/I4210129159",
+          "https://openalex.org/I4210166400",
+          "https://openalex.org/I48430043",
+          "https://openalex.org/I67348948"
+        ]
+      },
+      "years": [
+        2019,
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I1300504238",
+        "ror": "https://ror.org/00r254y42",
+        "display_name": "Piaggio (Italy)",
+        "country_code": "IT",
+        "type": "company",
+        "lineage": [
+          "https://openalex.org/I1300504238"
+        ]
+      },
+      "years": [
+        2008
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I2801862477",
+        "ror": "https://ror.org/0517h6h17",
+        "display_name": "Canada Research Chairs",
+        "country_code": "CA",
+        "type": "government",
+        "lineage": [
+          "https://openalex.org/I2801862477",
+          "https://openalex.org/I2802286613"
+        ]
+      },
+      "years": [
+        2024
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I1326498283",
+        "ror": "https://ror.org/02kvxyf05",
+        "display_name": "Institut national de recherche en sciences et technologies du numérique",
+        "country_code": "FR",
+        "type": "government",
+        "lineage": [
+          "https://openalex.org/I1326498283"
+        ]
+      },
+      "years": [
+        2019,
+        2018,
+        2017,
+        2015,
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I1325899441",
+        "ror": "https://ror.org/042xt5161",
+        "display_name": "University Health Network",
+        "country_code": "CA",
+        "type": "healthcare",
+        "lineage": [
+          "https://openalex.org/I1325899441"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I2802176441",
+        "ror": "https://ror.org/03b21sh32",
+        "display_name": "Basque Center for Applied Mathematics",
+        "country_code": "ES",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I2802176441"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022,
+        2021,
+        2020,
+        2019
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4388446386",
+        "ror": "https://ror.org/01f6jys10",
+        "display_name": "Krembil Research Institute",
+        "country_code": null,
+        "type": "facility",
+        "lineage": [
+          "https://openalex.org/I1325899441",
+          "https://openalex.org/I1325899441",
+          "https://openalex.org/I2799337515",
+          "https://openalex.org/I4388446386"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I108290504",
+        "ror": "https://ror.org/03ad39j10",
+        "display_name": "University of Pisa",
+        "country_code": "IT",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I108290504"
+        ]
+      },
+      "years": [
+        2008
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I165779595",
+        "ror": "https://ror.org/01ej9dk98",
+        "display_name": "The University of Melbourne",
+        "country_code": "AU",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I165779595"
+        ]
+      },
+      "years": [
+        2016
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210127391",
+        "ror": "https://ror.org/02g2x7380",
+        "display_name": "Italian Association for Cancer Research",
+        "country_code": "IT",
+        "type": "nonprofit",
+        "lineage": [
+          "https://openalex.org/I4210127391"
+        ]
+      },
+      "years": [
+        2005
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210159497",
+        "ror": "https://ror.org/05ecdew94",
+        "display_name": "Ontario Brain Institute",
+        "country_code": "CA",
+        "type": "nonprofit",
+        "lineage": [
+          "https://openalex.org/I4210159497"
+        ]
+      },
+      "years": [
+        2025
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I40347166",
+        "ror": "https://ror.org/024mw5h28",
+        "display_name": "University of Chicago",
+        "country_code": "US",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I40347166"
+        ]
+      },
+      "years": [
+        2019,
+        2017,
+        2015,
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I4210155607",
+        "ror": "https://ror.org/04dv4he91",
+        "display_name": "Laboratoire d'Informatique en Images et Systèmes d'Information",
+        "country_code": "FR",
+        "type": "facility",
+        "lineage": [
+          "https://openalex.org/I100532134",
+          "https://openalex.org/I112936343",
+          "https://openalex.org/I1294671590",
+          "https://openalex.org/I188626449",
+          "https://openalex.org/I203339264",
+          "https://openalex.org/I4210155607",
+          "https://openalex.org/I48430043"
+        ]
+      },
+      "years": [
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I169108374",
+        "ror": "https://ror.org/000xsnr85",
+        "display_name": "University of the Basque Country",
+        "country_code": "ES",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I169108374"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I185261750",
+        "ror": "https://ror.org/03dbr7087",
+        "display_name": "University of Toronto",
+        "country_code": "CA",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I185261750"
+        ]
+      },
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I1294671590",
+        "ror": "https://ror.org/02feahw73",
+        "display_name": "Centre National de la Recherche Scientifique",
+        "country_code": "FR",
+        "type": "government",
+        "lineage": [
+          "https://openalex.org/I1294671590"
+        ]
+      },
+      "years": [
+        2014
+      ]
+    },
+    {
+      "institution": {
+        "id": "https://openalex.org/I16391192",
+        "ror": "https://ror.org/04mhzgx49",
+        "display_name": "Tel Aviv University",
+        "country_code": "IL",
+        "type": "education",
+        "lineage": [
+          "https://openalex.org/I16391192"
+        ]
+      },
+      "years": [
+        2014,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008
+      ]
+    }
+  ],
+  "last_known_institutions": [
+    {
+      "id": "https://openalex.org/I2802176441",
+      "ror": "https://ror.org/03b21sh32",
+      "display_name": "Basque Center for Applied Mathematics",
+      "country_code": "ES",
+      "type": "education",
+      "lineage": [
+        "https://openalex.org/I2802176441"
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4388446386",
+      "ror": "https://ror.org/01f6jys10",
+      "display_name": "Krembil Research Institute",
+      "country_code": null,
+      "type": "facility",
+      "lineage": [
+        "https://openalex.org/I1325899441",
+        "https://openalex.org/I1325899441",
+        "https://openalex.org/I2799337515",
+        "https://openalex.org/I4388446386"
+      ]
+    },
+    {
+      "id": "https://openalex.org/I1325899441",
+      "ror": "https://ror.org/042xt5161",
+      "display_name": "University Health Network",
+      "country_code": "CA",
+      "type": "healthcare",
+      "lineage": [
+        "https://openalex.org/I1325899441"
+      ]
+    },
+    {
+      "id": "https://openalex.org/I4210159497",
+      "ror": "https://ror.org/05ecdew94",
+      "display_name": "Ontario Brain Institute",
+      "country_code": "CA",
+      "type": "nonprofit",
+      "lineage": [
+        "https://openalex.org/I4210159497"
+      ]
+    },
+    {
+      "id": "https://openalex.org/I169108374",
+      "ror": "https://ror.org/000xsnr85",
+      "display_name": "University of the Basque Country",
+      "country_code": "ES",
+      "type": "education",
+      "lineage": [
+        "https://openalex.org/I169108374"
+      ]
+    },
+    {
+      "id": "https://openalex.org/I185261750",
+      "ror": "https://ror.org/03dbr7087",
+      "display_name": "University of Toronto",
+      "country_code": "CA",
+      "type": "education",
+      "lineage": [
+        "https://openalex.org/I185261750"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "https://openalex.org/T10077",
+      "display_name": "Neuroscience and Neuropharmacology Research",
+      "count": 31,
+      "score": 1.0,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2804",
+        "display_name": "Cellular and Molecular Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10581",
+      "display_name": "Neural dynamics and brain function",
+      "count": 26,
+      "score": 0.9998000264167786,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2805",
+        "display_name": "Cognitive Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11266",
+      "display_name": "Neuroinflammation and Neurodegeneration Mechanisms",
+      "count": 11,
+      "score": 0.9998999834060669,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2808",
+        "display_name": "Neurology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T12236",
+      "display_name": "Photoreceptor and optogenetics research",
+      "count": 8,
+      "score": 0.9987999796867371,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2804",
+        "display_name": "Cellular and Molecular Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11480",
+      "display_name": "Connexins and lens biology",
+      "count": 6,
+      "score": 0.9994999766349792,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1312",
+        "display_name": "Molecular Biology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "topic_share": [
+    {
+      "id": "https://openalex.org/T10581",
+      "display_name": "Neural dynamics and brain function",
+      "value": 7.63e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2805",
+        "display_name": "Cognitive Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11480",
+      "display_name": "Connexins and lens biology",
+      "value": 7.45e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1312",
+        "display_name": "Molecular Biology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T11266",
+      "display_name": "Neuroinflammation and Neurodegeneration Mechanisms",
+      "value": 6.22e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2808",
+        "display_name": "Neurology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10077",
+      "display_name": "Neuroscience and Neuropharmacology Research",
+      "value": 5.66e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/2804",
+        "display_name": "Cellular and Molecular Neuroscience"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/28",
+        "display_name": "Neuroscience"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    },
+    {
+      "id": "https://openalex.org/T10268",
+      "display_name": "Developmental Biology and Gene Regulation",
+      "value": 4.46e-05,
+      "subfield": {
+        "id": "https://openalex.org/subfields/1312",
+        "display_name": "Molecular Biology"
+      },
+      "field": {
+        "id": "https://openalex.org/fields/13",
+        "display_name": "Biochemistry, Genetics and Molecular Biology"
+      },
+      "domain": {
+        "id": "https://openalex.org/domains/1",
+        "display_name": "Life Sciences"
+      }
+    }
+  ],
+  "x_concepts": [
+    {
+      "id": "10162356",
+      "wikidata": "https://www.wikidata.org/wiki/Q1135939",
+      "display_name": "Pathophysiology",
+      "score": 0.4236452579498291
+    },
+    {
+      "id": "104317684",
+      "wikidata": "https://www.wikidata.org/wiki/Q7187",
+      "display_name": "Gene",
+      "score": 0.14674672484397888
+    },
+    {
+      "id": "104317684",
+      "wikidata": "https://www.wikidata.org/wiki/Q7187",
+      "display_name": "Gene",
+      "score": 0.10953864455223083
+    },
+    {
+      "id": "105702510",
+      "wikidata": "https://www.wikidata.org/wiki/Q514",
+      "display_name": "Anatomy",
+      "score": 0.35638803243637085
+    },
+    {
+      "id": "105795698",
+      "wikidata": "https://www.wikidata.org/wiki/Q12483",
+      "display_name": "Statistics",
+      "score": 0.0
+    }
+  ],
+  "counts_by_year": [
+    {
+      "year": 2005,
+      "works_count": 1,
+      "oa_works_count": 0,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2008,
+      "works_count": 2,
+      "oa_works_count": 2,
+      "cited_by_count": 95
+    },
+    {
+      "year": 2009,
+      "works_count": 3,
+      "oa_works_count": 3,
+      "cited_by_count": 198
+    },
+    {
+      "year": 2010,
+      "works_count": 2,
+      "oa_works_count": 2,
+      "cited_by_count": 111
+    },
+    {
+      "year": 2011,
+      "works_count": 3,
+      "oa_works_count": 1,
+      "cited_by_count": 123
+    },
+    {
+      "year": 2012,
+      "works_count": 5,
+      "oa_works_count": 5,
+      "cited_by_count": 161
+    },
+    {
+      "year": 2014,
+      "works_count": 6,
+      "oa_works_count": 6,
+      "cited_by_count": 117
+    },
+    {
+      "year": 2015,
+      "works_count": 1,
+      "oa_works_count": 1,
+      "cited_by_count": 258
+    },
+    {
+      "year": 2016,
+      "works_count": 2,
+      "oa_works_count": 2,
+      "cited_by_count": 95
+    },
+    {
+      "year": 2017,
+      "works_count": 4,
+      "oa_works_count": 4,
+      "cited_by_count": 4
+    },
+    {
+      "year": 2018,
+      "works_count": 2,
+      "oa_works_count": 2,
+      "cited_by_count": 2
+    },
+    {
+      "year": 2019,
+      "works_count": 8,
+      "oa_works_count": 5,
+      "cited_by_count": 254
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "oa_works_count": 1,
+      "cited_by_count": 18
+    },
+    {
+      "year": 2021,
+      "works_count": 1,
+      "oa_works_count": 1,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "oa_works_count": 1,
+      "cited_by_count": 43
+    },
+    {
+      "year": 2023,
+      "works_count": 2,
+      "oa_works_count": 2,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2024,
+      "works_count": 3,
+      "oa_works_count": 3,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2025,
+      "works_count": 2,
+      "oa_works_count": 0,
+      "cited_by_count": 22
+    }
+  ],
+  "longest_name": "de Pittà, Maurizio",
+  "parsed_longest_name": {
+    "first": "maurizio",
+    "middle": "",
+    "last": "de pitta",
+    "suffix": "",
+    "nickname": ""
+  },
+  "block_key": "m de pitta",
+  "works_api_url": "https://api.openalex.org/works?filter=author.id:A5077227646",
+  "updated_date": "2025-11-23T05:10:03.516525",
+  "created_date": "2016-09-16"
+}

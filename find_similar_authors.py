@@ -78,7 +78,7 @@ def prepare_author_infos(author_info_list, outProj, inProj):
 
 def generate_similar_authors_map(main_author_ID):
     topics_list, score_list, works_list = get_topics_from_author(main_author_ID)
-    paper_list = get_top_n_papers(topics_list, 100)['results'][:100]
+    paper_list = get_top_n_papers(topics_list, 50)['results'][:50]
     author_info_list = get_paper_authors(paper_list)
     author_info_list = prepare_author_infos(author_info_list, outProj, inProj)
 
@@ -162,3 +162,4 @@ inProj = Proj(init='epsg:3857')
 main_author_ID = 'A5077227646'
 
 # generate_similar_authors_map(main_author_ID)
+generate_similar_authors_map(main_author_ID)
