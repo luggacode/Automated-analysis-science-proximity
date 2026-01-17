@@ -20,17 +20,16 @@ def extract_openalex_id(input_string):
     openalex_id = last_part.replace(".json", "")
     return openalex_id
 
-def get_content_from_request(url, filename):
+def get_content_from_request(url):
     """
     saves data from API request to json-file
     """
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        with open(str(filename) + ".json", "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
     else:
         print("Request failed:", response.status_code)
+    return data
 
 def get_works_from_request(url, content) ->  dict:
     """
@@ -46,38 +45,36 @@ def get_works_from_request(url, content) ->  dict:
     return content
     
 
-def get_institution(file):
+def get_institution(author_ID):
     """
     Returns ror-ID of the last known institution of a researcher in his records
     """
     content = None
-    with open(str(file) + ".json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-        try: 
-            content = data['last_known_institutions'][0]['ror']
+    data = get_content_from_request('https://api.openalex.org/authors/' + author_ID)
+    try: 
+        content = data['last_known_institutions'][0]['ror']
+    except (KeyError, IndexError, TypeError):
+        try:
+            vergleichsjahr = 0
+            for ind, aff in enumerate(data['affiliations']):
+                year = int(data['affiliations'][ind]['years'][0])
+                if vergleichsjahr < year:
+                    content = data['affiliations'][ind]['institution']['ror']
+                    vergleichsjahr = year
         except (KeyError, IndexError, TypeError):
-            try:
-                vergleichsjahr = 0
-                for ind, aff in enumerate(data['affiliations']):
-                    year = int(data['affiliations'][ind]['years'][0])
-                    if vergleichsjahr < year:
-                        content = data['affiliations'][ind]['institution']['ror']
-                        vergleichsjahr = year
-            except (KeyError, IndexError, TypeError):
-                content = None
+            content = None
     return content
 
-def get_coordinates(file):
+def get_coordinates(institution):
     """
     Returns longitude and latitude of an institutions ror-file 
     """
-    with open(str(file) + ".json", "r", encoding="utf-8") as f:
-        content = json.load(f)['locations'][0]['geonames_details']
-        latitude = content['lat']
-        longitude = content['lng']
+    institution = institution['locations'][0]['geonames_details']
+    latitude = institution['lat']
+    longitude = institution['lng']
     return latitude, longitude
 
-def get_author_info(file):
+def get_author_info(url):
     """
     Returns dict with relevant information in the researchers records
     """
@@ -86,10 +83,14 @@ def get_author_info(file):
         "works_count": "",
         "cited_by_count": ""
     }
-    with open(str(file) + ".json", "r", encoding="utf-8") as f:
-        content = json.load(f)
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
         for key in information:
-            information[key] = content[key]
+            information[key] = data[key]
+    else:
+        print("Request failed:", response.status_code)
+        
     return information
 
 def get_related_authors(author_ID):
@@ -113,10 +114,11 @@ def get_institution_location(author_ID):
     Returns longitude and latitude of an authors institution based on their OpenAlexID
     """
     print(author_ID)
-    institution_ID = get_institution('Authors/' + str(author_ID))
+    institution_ID = get_institution(author_ID)
     if not institution_ID == None:
-        get_content_from_request('https://api.ror.org/v2/organizations/' + institution_ID, 'Institutions/institution_' + str(author_ID))
-        lat, lng = get_coordinates('Institutions/institution_' + str(author_ID))
+        institution = get_content_from_request('https://api.ror.org/v2/organizations/' + institution_ID)
+        print(institution)
+        lat, lng = get_coordinates(institution)
     else:
         lat = 0
         lng = 0

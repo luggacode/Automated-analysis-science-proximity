@@ -11,10 +11,7 @@ from useful_methods import get_topic_id, all_sublists_descending, get_length_wor
 
 def get_topics_from_author(author_id):
     topic_list, score_list, works_list = [], [], []
-    if not file_exists('Authors/', author_id + '.json'):
-        get_content_from_request('https://api.openalex.org/authors/' + author_id, 'Authors_' + author_id)
-    with open('Authors/' + str(author_id)  + ".json", "r", encoding="utf-8") as f:
-        data = json.load(f)
+    data = get_content_from_request('https://api.openalex.org/authors/' + author_id)
     topics = data['topics']
     for element in topics:
         topic_list.append(get_topic_id(element['id']))
@@ -66,10 +63,9 @@ def get_paper_authors(content):
     return related_authors
 
 def prepare_author_infos(author_info_list, outProj, inProj):
+    query = ''
     for author in author_info_list:
-        if not file_exists('Authors/', author + '.json'):
-            get_content_from_request("https://api.openalex.org/authors/" + str(author), 'Authors/' + str(author))
-        author_info_list[author] = get_author_info('Authors/' + str(author))
+        author_info_list[author] = get_author_info('https://api.openalex.org/authors/' + author)
         lat, lng = get_institution_location(author)
         author_info_list[author]['lat'] = lat
         author_info_list[author]['lng'] = lng
