@@ -61,14 +61,5 @@ def all_sublists_descending(input_list):
     return result
 
 
-def create_empty_map():
-    map_url = "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip"
-    world = gpd.read_file(map_url)
-    m = figure(title='Related Scientists Map', width=1200, # main_author[main_author_ID]['display_name']
-            height=700, x_range=(-12000000, 9000000),
-            y_range=(-1000000, 7000000),
-            x_axis_type='mercator', y_axis_type='mercator',
-            )
-    m.add_tile("CartoDB Positron", retina=True)
-    return m
+
 
