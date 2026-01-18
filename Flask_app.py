@@ -15,6 +15,7 @@ def index():
         author_name = request.form["author"]
         fig = generate_similar_authors_map(author_name)
         script, div = components(fig)
+        print("Returning template with script length:", len(script))
 
     return render_template(
         "index.html",
@@ -23,5 +24,6 @@ def index():
     )
 
 if __name__ == "__main__":
+    # app.run(debug=True)
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
