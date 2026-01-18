@@ -10,3 +10,4 @@ rank_bm25==0.2.2
 Requests==2.32.5
 Shapely==2.1.2
 tqdm==4.67.1
+gunicorn==23.0.0
