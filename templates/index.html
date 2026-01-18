@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Bokeh resources -->
     <link
     href="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.1.min.css"
      rel="stylesheet">
     <script
     src="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.1.min.js">
     </script>
+    <!-- Page styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 6px;
+        }
+
+        .description {
+            margin-bottom: 20px;
+        }
+    </style>
+     <!-- title -->
     <title>Scientist Similarity Map</title>
     {{ script|safe }}
 </head>
 <body>
-    <h1>Scientist Similarity Map</h1>
-
-    <form method="post">
-        <input type="text" name="author" placeholder="Scientist name">
-        <button type="submit">Generate</button>
-    </form>
-
-    {{ div|safe }}
+    <div class = "container" >
+        <h1>Scientist Similarity Map</h1>
+        <section class="description">
+            <h2>About this tool</h2>
+            <ul>
+                <li>Identifies scientists publishing on similar topics using OpenAlex metadata.</li>
+                <li>Similarity is based on publication content, not direct collaboration.</li>
+                <li>Geographic positions are inferred from institutional affiliations.</li>
+                <li>Results may be affected by missing or ambiguous author data. </li>
+                <li>If a person is centered in the middle of the map, the person has never been associated with any instituiton </li>
+                <li>Runtime depends on API response times. It might take up to 6 minutes</li>
+            </ul>
+        </section>
+        <form method="post">
+            <input type="text" name="author" placeholder="OpenAlex ID (Capital A required)">
+            <button type="submit">Generate</button>
+        </form>
+        {{ div|safe }}
+    </div>
 </body>
 </html>
