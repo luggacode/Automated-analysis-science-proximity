@@ -109,7 +109,7 @@ def generate_similar_authors_map(main_author_ID):
     ))
 
     # Creating Map object.
-    m = figure(title='Related Scientists Map ' + 'Maurizio De Pitta', width=1400, # main_author[main_author_ID]['display_name']
+    m = figure(title='Related Scientists Map ' + 'Maurizio De Pitta', width=1200, # main_author[main_author_ID]['display_name']
             height=700, x_range=(-12000000, 9000000),
             y_range=(-1000000, 7000000),
             x_axis_type='mercator', y_axis_type='mercator',
