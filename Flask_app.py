@@ -11,6 +11,13 @@ app = Flask(__name__)
 def index():
     fig = create_empty_map()
     script, div = components(fig)
+    author_info = {
+        'display_name': '',
+        'works_count': '',
+        'cited_by_count': '',
+        'topics': ''
+
+    } 
 
     if request.method == "POST":
         author_name = request.form["author"]
