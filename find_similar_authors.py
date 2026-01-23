@@ -64,7 +64,7 @@ def get_paper_authors(content):
 def prepare_author_infos(author_info_list, outProj, inProj):
     query = ''
     for author in author_info_list:
-        author_info_list[author] = get_author_info('https://api.openalex.org/authors/' + author)
+        author_info_list[author] = get_author_info(author)
         lat, lng = get_institution_location(author)
         author_info_list[author]['lat'] = lat
         author_info_list[author]['lng'] = lng

@@ -8,6 +8,7 @@ from pyproj import Proj, transform
 import geopandas as gpd
 from shapely.geometry import Point
 from useful_methods import file_exists
+from find_similar_authors import get_topics_from_author
 
 def extract_openalex_id(input_string):
     """
@@ -74,7 +75,7 @@ def get_coordinates(institution):
     longitude = institution['lng']
     return latitude, longitude
 
-def get_author_info(url):
+def get_author_info(author_ID):
     """
     Returns dict with relevant information in the researchers records
     """
@@ -83,11 +84,12 @@ def get_author_info(url):
         "works_count": "",
         "cited_by_count": ""
     }
-    response = requests.get(url)
+    response = requests.get('https://api.openalex.org/authors/' + author_ID)
     if response.status_code == 200:
         data = response.json()
         for key in information:
             information[key] = data[key]
+        information['topics'], a, b = get_topics_from_author(author_ID)
     else:
         print("Request failed:", response.status_code)
         

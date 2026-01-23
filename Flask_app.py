@@ -4,6 +4,7 @@ import API_call
 import useful_methods
 import os
 from find_similar_authors import generate_similar_authors_map, create_empty_map
+from API_call import get_author_info
 
 app = Flask(__name__)
 
@@ -16,12 +17,13 @@ def index():
         author_name = request.form["author"]
         fig = generate_similar_authors_map(author_name)
         script, div = components(fig)
-        print("Returning template with script length:", len(script))
+        author_info = get_author_info(author_name)
 
     return render_template(
         "index.html",
         script=script,
-        div=div
+        div=div,
+        author_info = author_info
     )
 
 if __name__ == "__main__":

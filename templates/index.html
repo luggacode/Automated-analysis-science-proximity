@@ -26,6 +26,29 @@
         .description {
             margin-bottom: 20px;
         }
+
+        .author-info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }   
+
+        .author-info table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .author-info th,
+        .author-info td {
+            text-align: left;
+            padding: 6px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author-info th {
+            width: 180px;
+            font-weight: bold;
+        }
+
     </style>
      <!-- title -->
     <title>Scientist Similarity Map</title>
@@ -49,6 +72,31 @@
             <input type="text" name="author" placeholder="OpenAlex ID (Capital A required)">
             <button type="submit">Generate</button>
         </form>
+        
+        {% if author_info %}
+        <section class="author-info">
+            <h2>Main author</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>{{ author_info.display_name }}</td>
+                </tr>
+                <tr>
+                    <th>Number of Works</th>
+                    <td>{{ author_info.works_count }}</td>
+                </tr>
+                <tr>
+                    <th>Citations</th>
+                    <td>{{ author_info.cited_by_count }}</td>
+                </tr>
+                <tr>
+                    <th>Topics</th>
+                    <td>{{ author_info.topics }}</td>
+                </tr>
+            </table>
+        </section>
+        {% endif %}
+
         {{ div|safe }}
     </div>
 </body>
