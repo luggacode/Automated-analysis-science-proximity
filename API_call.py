@@ -7,8 +7,7 @@ from bokeh.models import ColumnDataSource, HoverTool
 from pyproj import Proj, transform
 import geopandas as gpd
 from shapely.geometry import Point
-from useful_methods import file_exists
-from find_similar_authors import get_topics_from_author
+from useful_methods import file_exists, get_topic_id
 
 def extract_openalex_id(input_string):
     """
@@ -75,6 +74,16 @@ def get_coordinates(institution):
     longitude = institution['lng']
     return latitude, longitude
 
+def get_topics_from_author_2(author_id):
+    topic_list, score_list, works_list = [], [], []
+    data = get_content_from_request('https://api.openalex.org/authors/' + author_id)
+    topics = data['topics']
+    for element in topics:
+        topic_list.append(get_topic_id(element['id']))
+        score_list.append(element['score'])
+        works_list.append(element['count'])
+    return topic_list, score_list, works_list
+
 def get_author_info(author_ID):
     """
     Returns dict with relevant information in the researchers records
@@ -89,7 +98,7 @@ def get_author_info(author_ID):
         data = response.json()
         for key in information:
             information[key] = data[key]
-        information['topics'], a, b = get_topics_from_author(author_ID)
+        information['topics'], a, b = get_topics_from_author_2(author_ID)
     else:
         print("Request failed:", response.status_code)
         
