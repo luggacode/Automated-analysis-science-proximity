@@ -49,6 +49,27 @@
             font-weight: bold;
         }
 
+        .split-text {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .split-text span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(25px);
+            animation: letterFadeUp 0.6s ease-out forwards;
+        }
+
+        @keyframes letterFadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
      <!-- title -->
     <title>Scientist Similarity Map</title>
@@ -56,7 +77,7 @@
 </head>
 <body>
     <div class = "container" >
-        <h1>Scientist Similarity Map</h1>
+        <h1 id="greeting" class="split-text" data-text="Scientist Similarity Map"></h1>
         <section class="description">
             <h2>About this tool</h2>
             <ul>
@@ -98,6 +119,34 @@
         {% endif %}
 
         {{ div|safe }}
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const el = document.getElementById("greeting");
+            const text = el.dataset.text;
+
+            // Clear existing content
+            el.innerHTML = "";
+
+            // Split into letters
+            [...text].forEach((char, i) => {
+                const span = document.createElement("span");
+
+                // Preserve spaces
+                span.textContent = (char === " ") ? "\u00A0" : char;
+
+                // Delay per letter (similar to your delay={50})
+                span.style.animationDelay = `${i * 0.05}s`;
+
+                el.appendChild(span);
+            });
+
+            // Optional callback when finished (like your React snippet)
+            const totalDuration = (text.length * 0.05) + 0.6;
+            setTimeout(() => {
+                console.log("All letters have animated!");
+            }, totalDuration * 1000);
+        });
+        </script>
     </div>
 </body>
 </html>
